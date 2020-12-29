@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include ddmrp *.css
+recursive-include ddmrp *.csv
+recursive-include ddmrp *.html
+recursive-include ddmrp *.ico
+recursive-include ddmrp *.js
+recursive-include ddmrp *.json
+recursive-include ddmrp *.md
+recursive-include ddmrp *.png
+recursive-include ddmrp *.py
+recursive-include ddmrp *.svg
+recursive-include ddmrp *.txt
+recursive-exclude ddmrp *.pyc
