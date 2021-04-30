@@ -1,0 +1,31 @@
+[
+    {
+     "doctype": "Custom Field",
+     "dt": "BOM",
+     "fieldname": "plant",
+     "fieldtype": "Link",
+     "options": "Plant",
+     "insert_after": "alt_bom",
+     "label": "Plant",
+     "name": "BOM-plant"
+    },
+    {     
+     "doctype": "Custom Field",
+     "dt": "BOM",
+     "fieldname": "dlt",
+     "fieldtype": "Float",
+     "insert_after": "plant",
+     "label": "Decoupled Lead Time",
+     "name": "BOM-dlt"
+    },
+    {
+        "doctype": "Custom Field",
+        "dt": "Warehouse",
+        "fieldname": "plant",
+        "fieldtype": "Link",
+        "options": "Plant",
+        "insert_after": "warehouse_name",
+        "label": "Plant",
+        "name": "Warehouse-plant"
+    }
+]

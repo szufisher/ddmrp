@@ -1,0 +1,82 @@
+{
+ "actions": [],
+ "autoname": "format:{created}-{####}",
+ "creation": "2021-01-26 10:50:48.357061",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "source",
+  "type",
+  "column_break_3",
+  "item_code",
+  "plant",
+  "section_break_6",
+  "message"
+ ],
+ "fields": [
+  {
+   "fieldname": "source",
+   "fieldtype": "Select",
+   "label": "Source",
+   "options": "ADU\nDDMRP\nDLT\nLow Level Code",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "default": "Info",
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Type",
+   "options": "Info\nError\nDebug",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Item Code",
+   "options": "Item",
+   "read_only": 1
+  },
+  {
+   "fieldname": "plant",
+   "fieldtype": "Link",
+   "label": "Plant",
+   "options": "Plant",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "columns": 6,
+   "fieldname": "message",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Message",
+   "read_only": 1
+  }
+ ],
+ "in_create": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-01-26 16:58:51.290870",
+ "modified_by": "Administrator",
+ "module": "DDMRP",
+ "name": "DDMRP Action Log",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

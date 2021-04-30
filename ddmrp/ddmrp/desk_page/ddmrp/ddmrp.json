@@ -1,0 +1,71 @@
+{
+ "cards": [
+  {
+   "hidden": 0,
+   "label": "Strategic Inventory Positioning",
+   "links": "[\n    {\n\t\"type\": \"doctype\",\n\t\"name\": \"Plant\"\n\t},\n\t{\n\t\"type\": \"doctype\",\n\t\"name\": \"Item Plant\",\n\t\"description\": \"Material Master\"\n\t},\n\t{\n\t\"type\": \"doctype\",\n\t\"name\": \"Stock Buffer\",\n\t\"description\": \"Stock Buffer\"\n\t},\n\t{\n\t\"type\": \"report\",\n\t\"is_query_report\": true,\n\t\"name\": \"Multilevel BOM\",\n\t\"description\": \"MultiLevel BOM with DLT\"\n\t},\n\t{\n\t\"type\": \"doctype\",\n\t\"name\": \"DDMRP Action\",\n\t\"description\": \"DDMRP Action - Calculate DLT\"\n\t}\n]"
+  },
+  {
+   "hidden": 0,
+   "label": "Buffer Profiles and Levels",
+   "links": "[\n\t\t\t\t{\n\t\t\t\t\t\"type\": \"doctype\",\n\t\t\t\t\t\"name\": \"Lead Time Factor\"\n\t\t\t\t},\n                {\n\t\t\t\t\t\"type\": \"doctype\",\n\t\t\t\t\t\"name\": \"Variability Factor\"\n\t\t\t\t},\n                {\n\t\t\t\t\t\"type\": \"doctype\",\n\t\t\t\t\t\"name\": \"Buffer Profile\"\t\t\t\t\t\n\t\t\t\t},\n                {\n\t\t\t\t\t\"type\": \"doctype\",\n\t\t\t\t\t\"name\": \"ADU Calculation Method\"\n\t\t\t\t},\n                {\n\t\t\t\t\t\"type\": \"doctype\",\n\t\t\t\t\t\"name\": \"Demand Estimate\"\t\t\t\t\t\n\t\t\t\t},\n                {\n\t\t\t\t\t\"type\": \"doctype\",\n\t\t\t\t\t\"name\": \"Stock Buffer\"\t\t\t\t\n\t\t\t\t}\n            ]"
+  },
+  {
+   "hidden": 0,
+   "label": "Dynamic Adjustments",
+   "links": " [\n\t{\n\t\t\"type\": \"doctype\",\n\t\t\"name\": \"Date Range Type\"\t\t\t\t\t\n\t},\n    {\n\t\t\"type\": \"doctype\",\n\t\t\"name\": \"Date Range\"\t\t\t\t\t\n\t},\n\t{\n\t\t\"type\": \"doctype\",\n\t\t\"name\": \"DDMRP Adjustment\"\t\t\t\t\t\n\t},\n    {\n\t\t\"type\": \"doctype\",\n\t\t\"name\": \"DDMRP Adjustment Demand\"\t\t\t\t\t\n\t}\n]"
+  },
+  {
+   "hidden": 0,
+   "label": "Demand Driven Planning",
+   "links": " [\n                {\n\t\t\t\t\t\"type\": \"doctype\",\n\t\t\t\t\t\"name\": \"MRP Move\"\t\t\t\t\t\n\t\t\t\t},\n                {\n\t\t\t\t\t\"type\": \"doctype\",\n\t\t\t\t\t\"name\": \"Planned Order\"\t\t\t\t\t\n\t\t\t\t},\n                {\n\t\t\t\t\t\"type\": \"doctype\",\n\t\t\t\t\t\"name\": \"MRP Inventory\"\t\t\t\t\t\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"type\": \"doctype\",\n\t\t\t\t\t\"name\": \"Source List\"\t\t\t\t\t\n\t\t\t\t},\n                {\n\t\t\t\t\t\"type\": \"doctype\",\n\t\t\t\t\t\"name\": \"Stock Buffer\"\t\t\t\t\t\n\t\t\t\t}\n            ]"
+  },
+  {
+   "hidden": 0,
+   "label": "Visible and Collaborative Execution",
+   "links": "[\n\t{\n\t\t\"type\": \"doctype\",\n\t\t\"doctype\":\"Stock Buffer\",\n\t\t\"name\": \"DDMRP History\"\t\t\t\t\t\n\t},\n\t{\n\t\t\"type\": \"doctype\",\n\t\t\"doctype\":\"Stock Buffer\",\n\t\t\"label\":\"Buffer On Hand\",\n\t\t\"name\": \"Stock Buffer\"\t\t\t\t\t\n\t},\n\t{\n\t\t\"type\": \"report\",\n\t\t\"is_query_report\": true,\n\t\t\"label\":\"Stock Requirements List\",\n\t\t\"name\": \"Stock Requirements List\"\t\t\t\t\t\n\t},\n\t{\n\t\t\"type\": \"report\",\n\t\t\"is_query_report\": true,\n\t\t\"label\":\"Purchase Order On-Hand Status\",\n\t\t\"name\": \"Purchase Order On-Hand Status\"\t\t\t\t\t\n\t},\n\t{\n\t\t\"type\": \"report\",\n\t\t\"is_query_report\": true,\n\t\t\"label\":\"Work Order On-Hand Status\",\n\t\t\"name\": \"Work Order On-Hand Status\"\t\t\t\t\t\n\t}\n]"
+  },
+  {
+   "hidden": 0,
+   "label": "SAP Interface",
+   "links": "[\n\t{\n\t\t\"type\": \"doctype\",\n\t\t\"doctype\":\"Stock Buffer\",\n\t\t\"name\": \"SAP Interface\"\t\t\t\t\t\n\t},\n\t{\n\t\t\"type\": \"doctype\",\n\t\t\"name\": \"On Hand Stock\"\t\t\t\t\t\n\t},\n\t{\n\t\t\"type\": \"doctype\",\n\t\t\"name\": \"Open Orders\"\t\t\t\t\t\n\t},\n\t{\n\t\t\"type\": \"doctype\",\n\t\t\"name\": \"Daily Consumption\"\t\t\t\t\t\n\t},\n\t{\n\t\t\"type\": \"doctype\",\n\t\t\"name\": \"Stock Buffer Simulation\"\t\t\t\t\t\n\t},\n\t{\n\t\t\"type\": \"doctype\",\n\t\t\"name\": \"DDMRP Settings\"\t\t\t\t\t\n\t}\n]"
+  }
+ ],
+ "category": "Modules",
+ "charts": [],
+ "creation": "2021-01-21 14:45:15.334307",
+ "developer_mode_only": 0,
+ "disable_user_customization": 0,
+ "docstatus": 0,
+ "doctype": "Desk Page",
+ "extends_another_page": 0,
+ "hide_custom": 0,
+ "idx": 0,
+ "is_standard": 1,
+ "label": "DDMRP",
+ "modified": "2021-03-17 08:57:08.677392",
+ "modified_by": "Administrator",
+ "module": "DDMRP",
+ "name": "DDMRP",
+ "owner": "Administrator",
+ "pin_to_bottom": 0,
+ "pin_to_top": 0,
+ "shortcuts": [
+  {
+   "label": "Stock Buffer",
+   "link_to": "Stock Buffer",
+   "type": "DocType"
+  },
+  {
+   "label": "Material",
+   "link_to": "Item Plant",
+   "type": "DocType"
+  },
+  {
+   "label": "DDMRP History",
+   "link_to": "DDMRP History",
+   "type": "DocType"
+  }
+ ],
+ "shortcuts_label": "Shortcuts"
+}

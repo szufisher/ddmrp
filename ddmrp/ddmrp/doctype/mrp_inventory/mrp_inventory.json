@@ -1,0 +1,183 @@
+{
+ "actions": [],
+ "allow_copy": 1,
+ "autoname": "format:item_code-mrp_area-warehouse",
+ "creation": "2021-01-05 15:34:01.552451",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "plant",
+  "item_code",
+  "warehouse",
+  "column_break_4",
+  "company",
+  "uom",
+  "section_break_7",
+  "date",
+  "column_break_9",
+  "order_release_date",
+  "column_break_11",
+  "procurement_type",
+  "section_break_13",
+  "initial_on_hand_qty",
+  "demand_qty",
+  "supply_qty",
+  "column_break_17",
+  "final_on_hand_qty",
+  "running_availability",
+  "to_procure"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Item Code",
+   "options": "Item",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Company",
+   "options": "Company",
+   "read_only": 1
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "order_release_date",
+   "fieldtype": "Date",
+   "label": "Order Release Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "initial_on_hand_qty",
+   "fieldtype": "Float",
+   "label": "Initial On Hand Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "demand_qty",
+   "fieldtype": "Float",
+   "label": "Demand Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "supply_qty",
+   "fieldtype": "Float",
+   "label": "Supply Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "final_on_hand_qty",
+   "fieldtype": "Float",
+   "label": "Final On Hand Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "running_availability",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Running Availability",
+   "read_only": 1
+  },
+  {
+   "fieldname": "to_procure",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "To Procure"
+  },
+  {
+   "fieldname": "plant",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Plant",
+   "options": "Plant",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "procurement_type",
+   "fieldtype": "Select",
+   "label": "Procurement Type",
+   "options": "\nBuy\nManufacture\nPull\nPush\nPull and Push",
+   "read_only": 1
+  }
+ ],
+ "hide_toolbar": 1,
+ "in_create": 1,
+ "links": [],
+ "modified": "2021-02-05 16:36:53.885994",
+ "modified_by": "Administrator",
+ "module": "DDMRP",
+ "name": "MRP Inventory",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

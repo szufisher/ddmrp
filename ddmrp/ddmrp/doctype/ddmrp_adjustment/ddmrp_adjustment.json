@@ -1,0 +1,133 @@
+{
+ "actions": [],
+ "autoname": "format:{stock_buffer}-{date_range}-{###}",
+ "creation": "2020-12-29 14:59:54.954596",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "stock_buffer",
+  "column_break_2",
+  "item_code",
+  "column_break_4",
+  "plant",
+  "section_break_6",
+  "date_range",
+  "adjustment_type",
+  "cb_11",
+  "date_start",
+  "value",
+  "column_break_10",
+  "date_end"
+ ],
+ "fields": [
+  {
+   "fieldname": "stock_buffer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Stock Buffer",
+   "options": "Stock Buffer",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "stock_buffer.item_code",
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Item Code",
+   "options": "Item",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fetch_from": "stock_buffer.plant",
+   "fieldname": "plant",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Plant",
+   "options": "Plant",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_range",
+   "fieldtype": "Link",
+   "label": "Date Range",
+   "options": "Date Range",
+   "reqd": 1
+  },
+  {
+   "fieldname": "adjustment_type",
+   "fieldtype": "Select",
+   "label": "Adjustment Type",
+   "options": "Demand Adjustment Factor\nLead Time Adjustment Factor",
+   "reqd": 1
+  },
+  {
+   "fieldname": "value",
+   "fieldtype": "Float",
+   "label": "Value",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "date_range.date_start",
+   "fieldname": "date_start",
+   "fieldtype": "Date",
+   "label": "Date Start",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "date_range.date_end",
+   "fieldname": "date_end",
+   "fieldtype": "Date",
+   "label": "Date End",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cb_11",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "links": [],
+ "modified": "2021-01-29 09:00:22.340579",
+ "modified_by": "Administrator",
+ "module": "DDMRP",
+ "name": "DDMRP Adjustment",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

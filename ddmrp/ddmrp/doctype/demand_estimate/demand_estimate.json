@@ -1,0 +1,200 @@
+{
+ "actions": [],
+ "autoname": "format:{item_code}-{plant}-{date_start}-{date_end}-{##}",
+ "creation": "2021-01-12 09:46:03.109966",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date_start",
+  "item_code",
+  "column_break_6",
+  "date_end",
+  "plant",
+  "column_break_3",
+  "date_range",
+  "stock_buffer",
+  "section_break_9",
+  "qty",
+  "stock_uom_qty",
+  "column_break_12",
+  "uom",
+  "stock_uom",
+  "column_break_15",
+  "days",
+  "daily_qty",
+  "section_break_18",
+  "parent_demand",
+  "parent_item_code",
+  "column_break_20",
+  "company"
+ ],
+ "fields": [
+  {
+   "fieldname": "date_range",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Date Range",
+   "options": "Date Range"
+  },
+  {
+   "fetch_from": "stock_buffer.company",
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break",
+   "hidden": 1
+  },
+  {
+   "fetch_from": "date_range.date_start",
+   "fieldname": "date_start",
+   "fieldtype": "Date",
+   "label": "Date Start",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "stock_buffer.item_code",
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Item Code",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "date_range.date_end",
+   "fieldname": "date_end",
+   "fieldtype": "Date",
+   "label": "Date End",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "label": "Qty",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "stock_buffer.uom",
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "stock_buffer.uom",
+   "fieldname": "stock_uom",
+   "fieldtype": "Link",
+   "label": "Stock UOM",
+   "options": "UOM",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stock_uom_qty",
+   "fieldtype": "Float",
+   "label": "Stock UOM Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "daily_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Daily Qty",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "stock_buffer.plant",
+   "fieldname": "plant",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Plant",
+   "options": "Plant",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "date_range.days",
+   "fieldname": "days",
+   "fieldtype": "Int",
+   "label": "Days",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stock_buffer",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Stock Buffer",
+   "options": "Stock Buffer"
+  },
+  {
+   "fieldname": "section_break_18",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "parent_demand",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Parent Demand",
+   "options": "Demand Estimate",
+   "read_only": 1
+  },
+  {
+   "fieldname": "parent_item_code",
+   "fieldtype": "Link",
+   "label": "Parent Item Code",
+   "options": "Item",
+   "read_only": 1
+  }
+ ],
+ "links": [],
+ "modified": "2021-04-20 17:31:54.652457",
+ "modified_by": "yuxinyong@163.com",
+ "module": "DDMRP",
+ "name": "Demand Estimate",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "item_code",
+ "track_changes": 1
+}

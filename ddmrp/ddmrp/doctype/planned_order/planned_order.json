@@ -1,0 +1,177 @@
+{
+ "actions": [],
+ "autoname": "format:{item_plant}-{####}",
+ "creation": "2021-01-05 15:35:56.867853",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_plant",
+  "item_code",
+  "plant",
+  "planner",
+  "column_break_4",
+  "uom",
+  "company",
+  "note",
+  "section_break_7",
+  "order_release_date",
+  "due_date",
+  "column_break_10",
+  "qty_released",
+  "mrp_qty",
+  "fixed",
+  "section_break_14",
+  "mrp_action",
+  "mrp_inventory",
+  "column_break_19",
+  "supplier",
+  "warehouse"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Item Code",
+   "options": "Item"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "order_release_date",
+   "fieldtype": "Date",
+   "label": "Order Release Date"
+  },
+  {
+   "fieldname": "due_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Due Date"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "qty_released",
+   "fieldtype": "Float",
+   "label": "Qty Released"
+  },
+  {
+   "default": "1",
+   "fieldname": "fixed",
+   "fieldtype": "Check",
+   "label": "Fixed"
+  },
+  {
+   "fieldname": "mrp_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "MRP Qty"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "mrp_action",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "MRP Action",
+   "options": "\nManufacture\nBuy\nPull\nPush\nPull Push"
+  },
+  {
+   "fieldname": "mrp_inventory",
+   "fieldtype": "Link",
+   "label": "MRP Inventory",
+   "options": "MRP Inventory"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Data",
+   "label": "Note"
+  },
+  {
+   "fieldname": "item_plant",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Item Plant",
+   "options": "Item Plant"
+  },
+  {
+   "fieldname": "plant",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Plant",
+   "options": "Plant"
+  },
+  {
+   "fieldname": "planner",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Planner",
+   "options": "Planner"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Link",
+   "label": "Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "links": [],
+ "modified": "2021-02-05 14:02:59.289451",
+ "modified_by": "Administrator",
+ "module": "DDMRP",
+ "name": "Planned Order",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "item_code"
+}

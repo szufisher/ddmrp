@@ -1,0 +1,204 @@
+{
+ "actions": [],
+ "autoname": "format:{item_plant}-{#####}",
+ "creation": "2021-01-05 15:37:45.775306",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "state",
+  "item_plant",
+  "item_code",
+  "column_break_4",
+  "company",
+  "plant",
+  "warehouse",
+  "section_break_8",
+  "current_date",
+  "current_qty",
+  "column_break_13",
+  "mrp_date",
+  "mrp_qty",
+  "column_break_14",
+  "mrp_type",
+  "uom",
+  "column_break_18",
+  "mrp_origin",
+  "parent_item_code",
+  "column_break_20",
+  "ref_doctype",
+  "ref_docname",
+  "ref_doc_item",
+  "section_break_24",
+  "note"
+ ],
+ "fields": [
+  {
+   "fieldname": "state",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "State",
+   "options": "draft\nassigned\nconfirmed\nwaiting\npartially_available\nready\nsent\nto approve\napproved",
+   "reqd": 1
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Item Code",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "current_date",
+   "fieldtype": "Date",
+   "label": "Current Date"
+  },
+  {
+   "fieldname": "current_qty",
+   "fieldtype": "Float",
+   "label": "Current Qty"
+  },
+  {
+   "fieldname": "mrp_date",
+   "fieldtype": "Date",
+   "label": "MRP Date"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mrp_origin",
+   "fieldtype": "Select",
+   "label": "MRP Origin",
+   "options": "\nso\nwo\npo\nmv\nfc\nmrp"
+  },
+  {
+   "fieldname": "mrp_qty",
+   "fieldtype": "Float",
+   "label": "MRP Qty"
+  },
+  {
+   "fieldname": "mrp_type",
+   "fieldtype": "Select",
+   "label": "MRP Type",
+   "options": "s\nd"
+  },
+  {
+   "fieldname": "parent_item_code",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Parent Item Code",
+   "options": "Item"
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Data",
+   "label": "Note"
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Link",
+   "label": "Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ref_doctype",
+   "fieldtype": "Link",
+   "label": "Ref DocType",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "ref_docname",
+   "fieldtype": "Dynamic Link",
+   "label": "Ref DocName",
+   "options": "ref_doctype"
+  },
+  {
+   "fieldname": "ref_doc_item",
+   "fieldtype": "Data",
+   "label": "Ref Doc Item"
+  },
+  {
+   "fieldname": "section_break_24",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "item_plant",
+   "fieldtype": "Link",
+   "label": "Item Plant",
+   "options": "Item Plant",
+   "reqd": 1
+  },
+  {
+   "fieldname": "plant",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Plant",
+   "options": "Plant",
+   "reqd": 1
+  }
+ ],
+ "links": [],
+ "modified": "2021-02-05 14:57:45.466387",
+ "modified_by": "Administrator",
+ "module": "DDMRP",
+ "name": "MRP Move",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

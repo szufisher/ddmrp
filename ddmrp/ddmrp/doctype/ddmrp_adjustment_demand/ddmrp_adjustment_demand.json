@@ -1,0 +1,143 @@
+{
+ "actions": [],
+ "autoname": "format:{stock_buffer}-{date_start}-{date_end}",
+ "creation": "2021-01-18 11:22:48.023258",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "stock_buffer",
+  "buffer_origin",
+  "column_break_4",
+  "item_code",
+  "item_code_origin",
+  "column_break_6",
+  "plant",
+  "company",
+  "section_break_8",
+  "date_start",
+  "extra_demand",
+  "column_break_11",
+  "date_end",
+  "uom"
+ ],
+ "fields": [
+  {
+   "fieldname": "stock_buffer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Stock Buffer",
+   "options": "Stock Buffer",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "stock_buffer.item_code",
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Item Code",
+   "options": "Item",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fetch_from": "stock_buffer.plant",
+   "fieldname": "plant",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Plant",
+   "options": "Plant",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Originated from",
+   "fieldname": "buffer_origin",
+   "fieldtype": "Link",
+   "label": "Buffer Origin",
+   "options": "Stock Buffer",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "buffer_origin.item_code",
+   "fieldname": "item_code_origin",
+   "fieldtype": "Link",
+   "label": "Item Code Origin",
+   "options": "Item",
+   "read_only": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "extra_demand",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Extra Demand",
+   "reqd": 1
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_start",
+   "fieldtype": "Date",
+   "label": "Date Start",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_end",
+   "fieldtype": "Date",
+   "label": "Date End",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "links": [],
+ "modified": "2021-02-05 10:53:37.432716",
+ "modified_by": "Administrator",
+ "module": "DDMRP",
+ "name": "DDMRP Adjustment Demand",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

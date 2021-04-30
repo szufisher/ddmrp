@@ -1,0 +1,127 @@
+{
+ "actions": [],
+ "autoname": "format:{item_code}-{plant}-{supplier}",
+ "creation": "2021-01-15 13:13:09.267039",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "plant",
+  "column_break_3",
+  "active",
+  "supplier",
+  "is_fixed",
+  "section_break_7",
+  "quota_percent",
+  "monthly_quota",
+  "column_break_10",
+  "pdt",
+  "lot_size",
+  "yearly_quota"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Item Code",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "plant",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Plant",
+   "options": "Plant",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "active",
+   "fieldtype": "Check",
+   "in_standard_filter": 1,
+   "label": "Active"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Supplier",
+   "options": "Supplier",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "quota_percent",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Quota Percent"
+  },
+  {
+   "fieldname": "monthly_quota",
+   "fieldtype": "Float",
+   "label": "Monthly Quota"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "yearly_quota",
+   "fieldtype": "Float",
+   "label": "Yearly Quota"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_fixed",
+   "fieldtype": "Check",
+   "label": "Fixed"
+  },
+  {
+   "fieldname": "lot_size",
+   "fieldtype": "Float",
+   "label": "Lot Size"
+  },
+  {
+   "fieldname": "pdt",
+   "fieldtype": "Float",
+   "label": "Planned Delivery Time"
+  }
+ ],
+ "links": [],
+ "modified": "2021-01-26 10:46:01.180729",
+ "modified_by": "Administrator",
+ "module": "DDMRP",
+ "name": "Source List",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

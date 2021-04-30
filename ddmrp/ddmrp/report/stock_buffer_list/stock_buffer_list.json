@@ -1,0 +1,26 @@
+{
+ "add_total_row": 0,
+ "creation": "2021-01-19 13:40:39.831103",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "idx": 0,
+ "is_standard": "Yes",
+ "json": "{\"filters\":[],\"fields\":[[\"name\",\"Stock Buffer\"],[\"item_code\",\"Stock Buffer\"],[\"actual_qty\",\"Stock Buffer\"],[\"net_flow_position\",\"Stock Buffer\"],[\"net_flow_position_percent\",\"Stock Buffer\"],[\"qualified_demand\",\"Stock Buffer\"],[\"incoming_dlt_qty\",\"Stock Buffer\"],[\"planning_priority_level\",\"Stock Buffer\"],[\"procure_recommended_qty\",\"Stock Buffer\"],[\"execution_priority_level\",\"Stock Buffer\"],[\"on_hand_percent\",\"Stock Buffer\"]],\"order_by\":\"`tabStock Buffer`.`modified` desc\",\"add_totals_row\":0,\"page_length\":20,\"column_widths\":{\"name\":120,\"item_code\":120,\"actual_qty\":120,\"net_flow_position\":120,\"net_flow_position_percent\":182,\"qualified_demand\":120,\"incoming_dlt_qty\":146,\"planning_priority_level\":146,\"procure_recommended_qty\":173,\"execution_priority_level\":133,\"on_hand_percent\":120},\"group_by\":null}",
+ "modified": "2021-01-19 15:22:48.574717",
+ "modified_by": "Administrator",
+ "module": "DDMRP",
+ "name": "stock buffer list",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "",
+ "ref_doctype": "Stock Buffer",
+ "report_name": "stock buffer list",
+ "report_type": "Report Builder",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ]
+}

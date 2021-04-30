@@ -1,0 +1,282 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format: {item_code}_{plant}",
+ "creation": "2021-01-05 15:30:49.583460",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "active",
+  "plant",
+  "item_code",
+  "uom",
+  "column_break_4",
+  "procurement_type",
+  "planner",
+  "company",
+  "section_break_7",
+  "mrp_applicable",
+  "column_break_9",
+  "mrp_exclude",
+  "column_break_11",
+  "verified",
+  "sb_leadtim",
+  "inspection_time",
+  "transit_time",
+  "column_break_15",
+  "pdt",
+  "gr_time",
+  "ipt",
+  "dlt",
+  "section_break_18",
+  "maximum_order_qty",
+  "minimum_order_qty",
+  "qty_multiple",
+  "minimum_stock",
+  "column_break_23",
+  "supplier",
+  "procure_warehouse",
+  "section_break_22",
+  "nbr_days",
+  "column_break_30",
+  "qty_available",
+  "column_break_32",
+  "llc"
+ ],
+ "fields": [
+  {
+   "default": "1",
+   "fieldname": "active",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Active",
+   "search_index": 1
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Item Code",
+   "options": "Item",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "mrp_applicable",
+   "fieldtype": "Check",
+   "label": "MRP Applicable"
+  },
+  {
+   "default": "0",
+   "fieldname": "mrp_exclude",
+   "fieldtype": "Check",
+   "label": "MRP Exclude"
+  },
+  {
+   "default": "0",
+   "fieldname": "verified",
+   "fieldtype": "Check",
+   "label": "Verified"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "minimum_order_qty",
+   "fieldtype": "Float",
+   "label": "Minimum Order Qty"
+  },
+  {
+   "fieldname": "section_break_18",
+   "fieldtype": "Section Break"
+  },
+  {
+   "description": "Safety Stock",
+   "fieldname": "minimum_stock",
+   "fieldtype": "Float",
+   "label": "Minimum Stock"
+  },
+  {
+   "description": "Number of days to group demand for this product during the MRP run, in order to determine the quantity to order.",
+   "fieldname": "nbr_days",
+   "fieldtype": "Int",
+   "label": "NBR Days"
+  },
+  {
+   "fieldname": "qty_multiple",
+   "fieldtype": "Float",
+   "label": "Qty Multiple"
+  },
+  {
+   "fieldname": "section_break_22",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "procure_warehouse",
+   "fieldtype": "Link",
+   "label": "Procure Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "qty_available",
+   "fieldtype": "Float",
+   "label": "Qty Available",
+   "read_only": 1
+  },
+  {
+   "fieldname": "plant",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Plant",
+   "options": "Plant",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "llc",
+   "fieldtype": "Int",
+   "label": "Low Level Code",
+   "read_only": 1
+  },
+  {
+   "description": "Decoupled Lead Time",
+   "fieldname": "dlt",
+   "fieldtype": "Float",
+   "label": "Total Replenish Time",
+   "read_only": 1
+  },
+  {
+   "description": "Quality Inspection Lead Time",
+   "fieldname": "inspection_time",
+   "fieldtype": "Int",
+   "label": "Inspection Time"
+  },
+  {
+   "fieldname": "transit_time",
+   "fieldtype": "Int",
+   "label": "Transit Time"
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sb_leadtim",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_30",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_32",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "planner",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Planner",
+   "options": "Planner"
+  },
+  {
+   "depends_on": "eval:doc.procurement_type==='Buy'",
+   "description": "Planned Delivery Time",
+   "fieldname": "pdt",
+   "fieldtype": "Float",
+   "label": "Planned Delivery Time"
+  },
+  {
+   "depends_on": "eval:doc.procurement_type==='Manufacture'",
+   "description": "In house Manufacturing Lead Time",
+   "fieldname": "ipt",
+   "fieldtype": "Float",
+   "label": "In-house Production Time"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "depends_on": "eval:doc.procurement_type ==='Buy'",
+   "fieldname": "gr_time",
+   "fieldtype": "Float",
+   "label": "GR Processing Time"
+  },
+  {
+   "fieldname": "procurement_type",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Procurement Type",
+   "options": "\nBuy\nManufacture\nPull\nPush\nPull and Push"
+  },
+  {
+   "fieldname": "maximum_order_qty",
+   "fieldtype": "Float",
+   "label": "Maximum Order Qty"
+  }
+ ],
+ "links": [],
+ "modified": "2021-02-23 14:50:00.936753",
+ "modified_by": "Administrator",
+ "module": "DDMRP",
+ "name": "Item Plant",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "item_code",
+ "track_changes": 1
+}

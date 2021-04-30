@@ -1,0 +1,55 @@
+{
+ "actions": [],
+ "creation": "2021-01-22 14:10:51.619469",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "plant",
+  "action",
+  "run"
+ ],
+ "fields": [
+  {
+   "description": "Leave plant empty, will run actions for all plants",
+   "fieldname": "plant",
+   "fieldtype": "Link",
+   "label": "Plant",
+   "options": "Plant"
+  },
+  {
+   "fieldname": "action",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Action",
+   "options": "DLT\nMulti Level MRP\nADU\nDDMRP",
+   "reqd": 1
+  },
+  {
+   "fieldname": "run",
+   "fieldtype": "Button",
+   "label": "Run"
+  }
+ ],
+ "issingle": 1,
+ "links": [],
+ "modified": "2021-01-22 14:11:29.495280",
+ "modified_by": "Administrator",
+ "module": "DDMRP",
+ "name": "DDMRP Run",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

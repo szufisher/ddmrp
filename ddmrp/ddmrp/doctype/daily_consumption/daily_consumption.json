@@ -1,0 +1,112 @@
+{
+ "actions": [],
+ "autoname": "format:{material_doc}",
+ "creation": "2021-03-04 16:53:39.556579",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "material",
+  "plant",
+  "posting_date",
+  "column_break_4",
+  "qty",
+  "uom",
+  "section_break_7",
+  "movement_type",
+  "column_break_9",
+  "material_doc",
+  "column_break_11",
+  "cancelled_material_doc"
+ ],
+ "fields": [
+  {
+   "fieldname": "plant",
+   "fieldtype": "Link",
+   "label": "Plant",
+   "options": "Plant"
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Qty"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "material_doc",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Material Doc",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cancelled_material_doc",
+   "fieldtype": "Data",
+   "label": "Cancelled Material Doc"
+  },
+  {
+   "fieldname": "movement_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Movement Type"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "material",
+   "fieldtype": "Data",
+   "label": "Material"
+  }
+ ],
+ "links": [],
+ "modified": "2021-03-08 10:23:20.391143",
+ "modified_by": "Administrator",
+ "module": "DDMRP",
+ "name": "Daily Consumption",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "material"
+}

@@ -1,0 +1,72 @@
+{
+ "actions": [],
+ "creation": "2021-01-22 15:16:22.538297",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "plant",
+  "column_break_2",
+  "action",
+  "run",
+  "section_break_4",
+  "logs"
+ ],
+ "fields": [
+  {
+   "description": "Leave plant empty, will run actions for all plants",
+   "fieldname": "plant",
+   "fieldtype": "Link",
+   "label": "Plant",
+   "options": "Plant"
+  },
+  {
+   "fieldname": "action",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Action",
+   "options": "DLT\nMulti Level MRP\nADU\nDDMRP",
+   "reqd": 1
+  },
+  {
+   "fieldname": "run",
+   "fieldtype": "Button",
+   "label": "Run"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "logs",
+   "fieldtype": "Table",
+   "label": "Logs",
+   "options": "DDMRP Action Log"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "issingle": 1,
+ "links": [],
+ "modified": "2021-02-05 09:48:36.533082",
+ "modified_by": "Administrator",
+ "module": "DDMRP",
+ "name": "DDMRP Action",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

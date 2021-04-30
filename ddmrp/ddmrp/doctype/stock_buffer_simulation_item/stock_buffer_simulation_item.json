@@ -1,0 +1,318 @@
+{
+ "actions": [],
+ "creation": "2021-03-09 14:12:16.934421",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "input_data_section",
+  "date",
+  "column_break_3",
+  "demand",
+  "column_break_5",
+  "receive",
+  "column_break_7",
+  "actual",
+  "simulation_result_section",
+  "simulation_1_column",
+  "adu1",
+  "dlt1",
+  "tor1",
+  "toy1",
+  "tog1",
+  "actual1",
+  "supply1",
+  "demand1",
+  "available1",
+  "propose1",
+  "receive1",
+  "remark1",
+  "simulation_2_column",
+  "adu2",
+  "dlt2",
+  "tor2",
+  "toy2",
+  "tog2",
+  "actual2",
+  "supply2",
+  "demand2",
+  "available2",
+  "propose2",
+  "receive2",
+  "remark2",
+  "simulation_3_column",
+  "adu3",
+  "dlt3",
+  "tor3",
+  "toy3",
+  "tog3",
+  "actual3",
+  "supply3",
+  "demand3",
+  "available3",
+  "propose3",
+  "receive3",
+  "remark3"
+ ],
+ "fields": [
+  {
+   "fieldname": "input_data_section",
+   "fieldtype": "Section Break",
+   "label": "Input Data"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "demand",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Demand"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "receive",
+   "fieldtype": "Float",
+   "label": "Receive"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "actual",
+   "fieldtype": "Float",
+   "label": "Actual"
+  },
+  {
+   "fieldname": "simulation_result_section",
+   "fieldtype": "Section Break",
+   "label": "Simulation Result"
+  },
+  {
+   "fieldname": "simulation_1_column",
+   "fieldtype": "Column Break",
+   "label": "Simulation 1"
+  },
+  {
+   "fieldname": "adu1",
+   "fieldtype": "Float",
+   "label": "ADU"
+  },
+  {
+   "fieldname": "dlt1",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "DLT"
+  },
+  {
+   "fieldname": "tor1",
+   "fieldtype": "Float",
+   "label": "Top of Red"
+  },
+  {
+   "fieldname": "toy1",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Top of Yellow"
+  },
+  {
+   "fieldname": "tog1",
+   "fieldtype": "Float",
+   "label": "Top of Green"
+  },
+  {
+   "fieldname": "supply1",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Supply"
+  },
+  {
+   "fieldname": "demand1",
+   "fieldtype": "Float",
+   "label": "Demand"
+  },
+  {
+   "fieldname": "available1",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Available"
+  },
+  {
+   "fieldname": "propose1",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Propose"
+  },
+  {
+   "fieldname": "receive1",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Receive"
+  },
+  {
+   "fieldname": "simulation_2_column",
+   "fieldtype": "Column Break",
+   "label": "Simulation 2"
+  },
+  {
+   "fieldname": "adu2",
+   "fieldtype": "Float",
+   "label": "ADU"
+  },
+  {
+   "fieldname": "dlt2",
+   "fieldtype": "Float",
+   "label": "DLT"
+  },
+  {
+   "fieldname": "tor2",
+   "fieldtype": "Float",
+   "label": "Top of Red"
+  },
+  {
+   "fieldname": "toy2",
+   "fieldtype": "Float",
+   "label": "Top of Yellow"
+  },
+  {
+   "fieldname": "tog2",
+   "fieldtype": "Float",
+   "label": "Top of Green"
+  },
+  {
+   "fieldname": "supply2",
+   "fieldtype": "Float",
+   "label": "Supply"
+  },
+  {
+   "fieldname": "demand2",
+   "fieldtype": "Float",
+   "label": "Demand"
+  },
+  {
+   "fieldname": "available2",
+   "fieldtype": "Float",
+   "label": "Available"
+  },
+  {
+   "fieldname": "propose2",
+   "fieldtype": "Float",
+   "label": "Propose"
+  },
+  {
+   "fieldname": "receive2",
+   "fieldtype": "Float",
+   "label": "Receive"
+  },
+  {
+   "fieldname": "simulation_3_column",
+   "fieldtype": "Column Break",
+   "label": "Simulation 3"
+  },
+  {
+   "fieldname": "adu3",
+   "fieldtype": "Float",
+   "label": "ADU"
+  },
+  {
+   "fieldname": "dlt3",
+   "fieldtype": "Float",
+   "label": "DLT"
+  },
+  {
+   "fieldname": "tor3",
+   "fieldtype": "Float",
+   "label": "Top of Red"
+  },
+  {
+   "fieldname": "toy3",
+   "fieldtype": "Float",
+   "label": "Top of Yellow"
+  },
+  {
+   "fieldname": "tog3",
+   "fieldtype": "Float",
+   "label": "Top of Green"
+  },
+  {
+   "fieldname": "supply3",
+   "fieldtype": "Float",
+   "label": "Supply"
+  },
+  {
+   "fieldname": "demand3",
+   "fieldtype": "Float",
+   "label": "Demand"
+  },
+  {
+   "fieldname": "available3",
+   "fieldtype": "Float",
+   "label": "Available"
+  },
+  {
+   "fieldname": "propose3",
+   "fieldtype": "Float",
+   "label": "Propose"
+  },
+  {
+   "fieldname": "receive3",
+   "fieldtype": "Float",
+   "label": "Receive"
+  },
+  {
+   "fieldname": "actual1",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "On Hand"
+  },
+  {
+   "fieldname": "actual2",
+   "fieldtype": "Float",
+   "label": "On Hand "
+  },
+  {
+   "fieldname": "actual3",
+   "fieldtype": "Float",
+   "label": "On Hand"
+  },
+  {
+   "fieldname": "remark1",
+   "fieldtype": "Small Text",
+   "label": "Remark1"
+  },
+  {
+   "fieldname": "remark2",
+   "fieldtype": "Small Text",
+   "label": "Remark2"
+  },
+  {
+   "fieldname": "remark3",
+   "fieldtype": "Small Text",
+   "label": "Remark3"
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2021-03-22 15:38:57.766312",
+ "modified_by": "Administrator",
+ "module": "DDMRP",
+ "name": "Stock Buffer Simulation Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

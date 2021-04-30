@@ -1,0 +1,391 @@
+{
+ "actions": [],
+ "autoname": "format:{plant}_{item_code}",
+ "creation": "2021-03-09 14:09:44.583985",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "plant",
+  "column_break_2",
+  "item_code",
+  "column_break_4",
+  "uom",
+  "initial_param_section",
+  "minimum_order_quantity",
+  "procure_max_qty",
+  "qty_multiple",
+  "order_cycle",
+  "order_spike_horizon",
+  "order_spike_threshold",
+  "column_break_12",
+  "dlt",
+  "sigma",
+  "adu",
+  "adu_calculation_method",
+  "adu_horizon",
+  "version",
+  "column_break_17",
+  "safety_calc_method",
+  "lead_time_factor",
+  "variability_factor",
+  "beta",
+  "y",
+  "tor",
+  "toy",
+  "tog",
+  "simulate",
+  "stock_info_section",
+  "initial_state_column",
+  "begin_stock",
+  "begin_on_supply",
+  "column_break_25",
+  "param1",
+  "avg_stock1",
+  "stock_out_days1",
+  "cb_27",
+  "param2",
+  "avg_stock2",
+  "stock_out_days2",
+  "column_break_29",
+  "param3",
+  "avg_stock3",
+  "stock_out_days3",
+  "section_break_23",
+  "items",
+  "sb_ddmrp_chart",
+  "ddmrp_chart1",
+  "ddmrp_chart2",
+  "ddmrp_chart3"
+ ],
+ "fields": [
+  {
+   "fieldname": "plant",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Plant",
+   "options": "Plant",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Item Code",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "item_code.stock_uom",
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM",
+   "reqd": 1
+  },
+  {
+   "description": "Maximum qty for a single procurement",
+   "fieldname": "procure_max_qty",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Maximum Procure Batch"
+  },
+  {
+   "default": "1",
+   "description": "The procurement quantity will be rounded up to this multiple. ",
+   "fieldname": "qty_multiple",
+   "fieldtype": "Float",
+   "label": "Qty Multiple",
+   "reqd": 1
+  },
+  {
+   "description": "default as decoupled lead time",
+   "fieldname": "order_spike_horizon",
+   "fieldtype": "Int",
+   "label": "Order Spike Horizon"
+  },
+  {
+   "description": "default as half of red zone, ie. 0.5 * tor",
+   "fieldname": "order_spike_threshold",
+   "fieldtype": "Float",
+   "label": "Order Spike Threshold"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Decoupled Lead Time (days)",
+   "fieldname": "dlt",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "DLT (days)"
+  },
+  {
+   "description": "Average Daily Usage",
+   "fieldname": "adu",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "ADU"
+  },
+  {
+   "fieldname": "adu_calculation_method",
+   "fieldtype": "Select",
+   "label": "ADU calculation method",
+   "options": "Consumption\nEstimate",
+   "reqd": 1
+  },
+  {
+   "fieldname": "adu_horizon",
+   "fieldtype": "Int",
+   "label": "ADU Horizon"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.safety_calc_method =='Factor'",
+   "fieldname": "lead_time_factor",
+   "fieldtype": "Float",
+   "label": "Lead Time Factor"
+  },
+  {
+   "depends_on": "eval:doc.safety_calc_method =='Factor'",
+   "fieldname": "variability_factor",
+   "fieldtype": "Float",
+   "label": "Variability Factor"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "sb_ddmrp_chart",
+   "fieldtype": "Section Break",
+   "label": "DDMRP Chart"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_23",
+   "fieldtype": "Section Break",
+   "label": "Simulation"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "options": "Stock Buffer Simulation Item"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "initial_param_section",
+   "fieldtype": "Section Break",
+   "label": "Initial Parameters"
+  },
+  {
+   "fieldname": "stock_info_section",
+   "fieldtype": "Section Break",
+   "label": "Stock Info"
+  },
+  {
+   "fieldname": "column_break_25",
+   "fieldtype": "Column Break",
+   "label": "Simulation1"
+  },
+  {
+   "fieldname": "cb_27",
+   "fieldtype": "Column Break",
+   "label": "Simulation2"
+  },
+  {
+   "fieldname": "column_break_29",
+   "fieldtype": "Column Break",
+   "label": "Simulation3"
+  },
+  {
+   "fieldname": "begin_stock",
+   "fieldtype": "Float",
+   "label": "Beginning Stock"
+  },
+  {
+   "fieldname": "begin_on_supply",
+   "fieldtype": "Float",
+   "label": "Beginning On Supply"
+  },
+  {
+   "fieldname": "tor",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Top of Red"
+  },
+  {
+   "fieldname": "toy",
+   "fieldtype": "Float",
+   "label": "Top of Yellow"
+  },
+  {
+   "fieldname": "tog",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Top of Green"
+  },
+  {
+   "fieldname": "order_cycle",
+   "fieldtype": "Float",
+   "label": "Minimum Order Cycle"
+  },
+  {
+   "description": "Minimum qty for a single procurement",
+   "fieldname": "minimum_order_quantity",
+   "fieldtype": "Float",
+   "label": "Minimum Order Qty"
+  },
+  {
+   "default": "1",
+   "description": "3 simulation supported,",
+   "fieldname": "version",
+   "fieldtype": "Select",
+   "label": "Simulation Version",
+   "options": "1\n2\n3"
+  },
+  {
+   "description": "default 20% of dlt",
+   "fieldname": "sigma",
+   "fieldtype": "Float",
+   "label": "sigma"
+  },
+  {
+   "fieldname": "ddmrp_chart1",
+   "fieldtype": "HTML",
+   "label": "DDMRP Chart1"
+  },
+  {
+   "fieldname": "ddmrp_chart2",
+   "fieldtype": "HTML",
+   "label": "DDMRP Chart2"
+  },
+  {
+   "fieldname": "ddmrp_chart3",
+   "fieldtype": "HTML",
+   "label": "DDMRP Chart3"
+  },
+  {
+   "fieldname": "avg_stock1",
+   "fieldtype": "Float",
+   "label": "Average Stock",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stock_out_days1",
+   "fieldtype": "Int",
+   "label": "Stock Out Days",
+   "read_only": 1
+  },
+  {
+   "fieldname": "avg_stock2",
+   "fieldtype": "Float",
+   "label": "Average Stock",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stock_out_days2",
+   "fieldtype": "Int",
+   "label": "Stock Out Days",
+   "read_only": 1
+  },
+  {
+   "fieldname": "avg_stock3",
+   "fieldtype": "Float",
+   "label": "Average Stock",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stock_out_days3",
+   "fieldtype": "Int",
+   "label": "Stock Out Days",
+   "read_only": 1
+  },
+  {
+   "fieldname": "initial_state_column",
+   "fieldtype": "Column Break",
+   "label": "Initial State"
+  },
+  {
+   "default": "Factor",
+   "fieldname": "safety_calc_method",
+   "fieldtype": "Select",
+   "label": "Safety Calculation Method",
+   "options": "Factor\nCoefficient of Variation"
+  },
+  {
+   "default": "1.02",
+   "depends_on": "eval:doc.safety_calc_method !='Factor'",
+   "fieldname": "beta",
+   "fieldtype": "Float",
+   "label": "beta",
+   "mandatory_depends_on": "eval:doc.safety_calc_method !='Factor'"
+  },
+  {
+   "default": "1.15",
+   "depends_on": "eval:doc.safety_calc_method != 'Factor'",
+   "fieldname": "y",
+   "fieldtype": "Float",
+   "label": "y",
+   "mandatory_depends_on": "eval:doc.safety_calc_method !='Factor'"
+  },
+  {
+   "fieldname": "simulate",
+   "fieldtype": "Button",
+   "label": "Simulate"
+  },
+  {
+   "fieldname": "param1",
+   "fieldtype": "Long Text",
+   "label": "Parameters",
+   "read_only": 1
+  },
+  {
+   "fieldname": "param2",
+   "fieldtype": "Long Text",
+   "label": "Parameters",
+   "read_only": 1
+  },
+  {
+   "fieldname": "param3",
+   "fieldtype": "Long Text",
+   "label": "Parameters",
+   "read_only": 1
+  }
+ ],
+ "links": [],
+ "modified": "2021-03-25 10:59:32.415373",
+ "modified_by": "Administrator",
+ "module": "DDMRP",
+ "name": "Stock Buffer Simulation",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "item_code"
+}

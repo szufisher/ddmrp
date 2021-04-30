@@ -1,0 +1,206 @@
+{
+ "actions": [],
+ "allow_copy": 1,
+ "autoname": "format:{order_number}-{####}",
+ "creation": "2021-02-08 16:30:14.429601",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "order_category",
+  "order_number",
+  "partner",
+  "column_break_3",
+  "plant",
+  "location",
+  "procurement_group",
+  "column_break_6",
+  "material",
+  "uom",
+  "wo_header_material",
+  "section_break_9",
+  "start_date",
+  "column_break_11",
+  "due_date",
+  "section_break_13",
+  "order_qty",
+  "column_break_15",
+  "delivered_qty",
+  "column_break_17",
+  "open_qty",
+  "section_break_21",
+  "proposed",
+  "column_break_23",
+  "sync_status",
+  "column_break_25",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "order_category",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Order Category",
+   "options": "Sales Order\nProduction Order\nPurchase Order\nDependent Demand"
+  },
+  {
+   "fieldname": "order_number",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Order Number"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "plant",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Plant",
+   "options": "Plant"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Location"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "material",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Material"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "UOM"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "due_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Due Date"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "order_qty",
+   "fieldtype": "Float",
+   "label": "Order Qty"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "delivered_qty",
+   "fieldtype": "Float",
+   "label": "Delivered Qty"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "open_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Open Qty"
+  },
+  {
+   "fieldname": "partner",
+   "fieldtype": "Data",
+   "label": "Partner"
+  },
+  {
+   "fieldname": "wo_header_material",
+   "fieldtype": "Data",
+   "label": "WO Header Material"
+  },
+  {
+   "fieldname": "section_break_21",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "description": "when ticked, it means the record is created by DDMRP run, which need to be synced to the external system as outbound",
+   "fieldname": "proposed",
+   "fieldtype": "Check",
+   "in_standard_filter": 1,
+   "label": "Proposed"
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Pending",
+   "fieldname": "sync_status",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Sync Status",
+   "options": "Pending\nSuccess\nFail\nBlocked"
+  },
+  {
+   "fieldname": "column_break_25",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "procurement_group",
+   "fieldtype": "Data",
+   "label": "Procurement Group"
+  }
+ ],
+ "hide_toolbar": 1,
+ "links": [],
+ "modified": "2021-03-22 09:15:04.096023",
+ "modified_by": "Administrator",
+ "module": "DDMRP",
+ "name": "Open Orders",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "order_number"
+}

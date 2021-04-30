@@ -1,0 +1,32 @@
+{
+ "actions": [],
+ "autoname": "format: {plant}-{###}",
+ "creation": "2021-01-05 15:46:26.915694",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "plant"
+ ],
+ "fields": [
+  {
+   "fieldname": "plant",
+   "fieldtype": "Link",
+   "label": "Plant",
+   "options": "Plant",
+   "unique": 1
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2021-01-13 09:19:50.600260",
+ "modified_by": "Administrator",
+ "module": "DDMRP",
+ "name": "Multi Level MRP Area",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

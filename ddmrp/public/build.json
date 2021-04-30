@@ -1,0 +1,9 @@
+{
+	"js/ddmrp.min.js": [
+        "public/js/lib/bokeh/bokeh-1.1.0.js",
+        "public/js/lib/bokeh/bokeh-1.1.0.css",
+        "public/js/lib/bokeh/bokeh-api-1.1.0.js",
+        "public/js/lib/bokeh/bokeh-widgets-1.1.0.js",
+        "public/js/lib/bokeh/bokeh-widgets-1.1.0.css"
+	]
+}
