@@ -1,1 +1,2 @@
 frappe
+bokeh-1.1.0
